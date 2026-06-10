@@ -25,12 +25,14 @@
     strong { color: #e2e8f0; }
     .highlight { background: #0c111d; border-left: 3px solid #10b981; padding: 16px 20px; border-radius: 4px; margin: 16px 0; }
     .highlight p { color: #d1fae5; margin: 0; }
+    .warning { background: #0c111d; border-left: 3px solid #f59e0b; padding: 16px 20px; border-radius: 4px; margin: 16px 0; }
+    .warning p { color: #fde68a; margin: 0; }
     a { color: #38bdf8; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .divider { border: none; border-top: 1px solid #1f2937; margin: 32px 0; }
     .contact-box { background: #0c111d; border: 1px solid #1f2937; border-radius: 12px; padding: 24px; margin-top: 40px; }
     .contact-box h3 { color: #ffffff; font-size: 14px; font-weight: 800; margin-bottom: 12px; }
-    .footer-links { margin-top: 16px; font-size: 12px; color: #4b5563; }
+    .footer-links { margin-top: 16px; font-size: 12px; }
     .footer-links a { color: #4b5563; margin-right: 16px; }
   </style>
 </head>
@@ -47,7 +49,7 @@
   <!-- ENGLISH -->
   <div class="section active" id="en">
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: June 9, 2026</div>
+    <div class="updated">Last updated: June 10, 2026</div>
 
     <div class="highlight">
       <p>ProLens AI is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
@@ -56,9 +58,9 @@
     <h2>1. Information We Collect</h2>
     <ul>
       <li><strong>Account information:</strong> Email address, authentication credentials (via Firebase Authentication), and registration date.</li>
-      <li><strong>Usage data:</strong> Credit balance, plan type, photo processing counts, and feature usage statistics stored in Firestore.</li>
-      <li><strong>Device information:</strong> Android device ID for fraud prevention (one free credit per device policy).</li>
-      <li><strong>Photos:</strong> Photos you select are processed temporarily on your device and via our AI analysis service. Photos are never permanently stored on our servers.</li>
+      <li><strong>Usage statistics:</strong> Credits used, plan type, number of photos processed, and feature usage counts. These are retained for up to 12 months to manage your account and improve the service.</li>
+      <li><strong>Device information:</strong> Android device ID (Android Advertising ID or hardware identifier), used solely for fraud prevention — specifically to enforce our one free credit per device policy. This ID is stored in our database linked to your account and is deleted when you delete your account.</li>
+      <li><strong>Photos:</strong> See Section 3 below for full details.</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
@@ -72,22 +74,35 @@
 
     <h2>3. Photo Processing & Privacy</h2>
     <div class="highlight">
-      <p>✅ All photo enhancement processing happens on your device using Skia. Your photos are never uploaded to or stored on our servers permanently.</p>
+      <p>Photo enhancement (color correction, brightness, contrast adjustments) is performed entirely on your device using our local processing engine. Your original photos are never uploaded to our servers.</p>
     </div>
-    <p>For AI parameter analysis, photos are temporarily transmitted to Google Gemini API (via our secure Firebase Cloud Functions). This transmission is encrypted and the photos are not retained after analysis is complete.</p>
+    <p>For AI scene detection and parameter analysis, a resized version (maximum 1280px) of the selected photo is securely transmitted to Google Gemini API through Firebase Cloud Functions over an encrypted HTTPS connection.</p>
+    <p><strong>Photos are not permanently stored on our servers and are deleted after analysis is complete.</strong> We do not use your photos for training AI models or any purpose other than generating enhancement parameters for your session.</p>
 
-    <h2>4. Third-Party Services</h2>
+    <h2>4. AI Generated Results Disclaimer</h2>
+    <div class="warning">
+      <p>ProLens AI uses artificial intelligence to generate image enhancement recommendations and processing parameters. Results may vary depending on image quality, lighting conditions, and subject matter. Users remain responsible for reviewing processed images before commercial or professional use. ProLens AI makes no guarantee that processed images will meet specific quality standards or requirements.</p>
+    </div>
+
+    <h2>5. Third-Party Services</h2>
     <ul>
       <li><strong>Firebase (Google):</strong> Authentication, database, and cloud functions. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
       <li><strong>Google Gemini API:</strong> AI photo parameter analysis. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
       <li><strong>Google Play Billing:</strong> In-app purchases and subscriptions. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
       <li><strong>Google Sign-In:</strong> Optional authentication method.</li>
+      <li><strong>RevenueCat (if applicable):</strong> Subscription management and purchase validation. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
     </ul>
 
-    <h2>5. Data Retention</h2>
-    <p>We retain your account data for as long as your account is active. Photos are not stored after processing. Usage statistics are retained for up to 12 months. Upon account deletion, all personal data is removed within 30 days.</p>
+    <h2>6. Data Retention</h2>
+    <ul>
+      <li><strong>Account data:</strong> Retained while your account is active.</li>
+      <li><strong>Photos:</strong> Not stored after processing. Deleted immediately after analysis.</li>
+      <li><strong>Usage statistics</strong> (photos processed count, credits used, plan type): Retained for up to 12 months.</li>
+      <li><strong>Device ID:</strong> Retained until account deletion.</li>
+      <li><strong>Upon account deletion:</strong> All personal data is removed within 30 days.</li>
+    </ul>
 
-    <h2>6. Your Rights (GDPR / KVKK)</h2>
+    <h2>7. Your Rights (GDPR / KVKK)</h2>
     <p>You have the right to:</p>
     <ul>
       <li>Access the personal data we hold about you.</li>
@@ -98,13 +113,13 @@
     </ul>
     <p>To exercise these rights, delete your account directly in the app or contact us at <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a>.</p>
 
-    <h2>7. Children's Privacy</h2>
+    <h2>8. Children's Privacy</h2>
     <p>ProLens AI is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will delete it immediately.</p>
 
-    <h2>8. Data Security</h2>
-    <p>We implement industry-standard security measures including Firebase App Check, encrypted data transmission (HTTPS/TLS), and Firestore security rules to protect your data from unauthorized access.</p>
+    <h2>9. Data Security</h2>
+    <p>We implement industry-standard security measures including Firebase App Check (Play Integrity API), encrypted data transmission (HTTPS/TLS), and Firestore security rules that ensure users can only access their own data.</p>
 
-    <h2>9. Changes to This Policy</h2>
+    <h2>10. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or by email. Continued use of ProLens AI after changes constitutes acceptance of the updated policy.</p>
 
     <hr class="divider">
@@ -122,7 +137,7 @@
   <!-- TÜRKÇE -->
   <div class="section" id="tr">
     <h1>Gizlilik Politikası</h1>
-    <div class="updated">Son güncelleme: 9 Haziran 2026</div>
+    <div class="updated">Son güncelleme: 10 Haziran 2026</div>
 
     <div class="highlight">
       <p>ProLens AI, kullanıcı gizliliğine saygı duyar. Bu politika, hangi verileri topladığımızı, nasıl kullandığımızı ve haklarınızı açıklar.</p>
@@ -131,9 +146,9 @@
     <h2>1. Topladığımız Bilgiler</h2>
     <ul>
       <li><strong>Hesap bilgileri:</strong> E-posta adresi, kimlik doğrulama bilgileri (Firebase Authentication) ve kayıt tarihi.</li>
-      <li><strong>Kullanım verileri:</strong> Kredi bakiyesi, plan türü, fotoğraf işleme sayıları (Firestore'da saklanır).</li>
-      <li><strong>Cihaz bilgisi:</strong> Sahtekarlığı önlemek için Android cihaz kimliği (cihaz başına ücretsiz kredi politikası).</li>
-      <li><strong>Fotoğraflar:</strong> Seçtiğiniz fotoğraflar yalnızca geçici olarak işlenir. Fotoğraflar sunucularımızda kalıcı olarak saklanmaz.</li>
+      <li><strong>Kullanım istatistikleri:</strong> Kullanılan kredi miktarı, plan türü, işlenen fotoğraf sayısı ve özellik kullanım sayıları. Hesabınızı yönetmek ve hizmeti iyileştirmek amacıyla en fazla 12 ay saklanır.</li>
+      <li><strong>Cihaz bilgisi:</strong> Android cihaz kimliği (Android Reklam Kimliği veya donanım tanımlayıcısı), yalnızca sahtekarlığı önlemek amacıyla kullanılır — özellikle cihaz başına ücretsiz kredi politikasını uygulamak için. Bu kimlik, hesabınıza bağlı olarak veritabanımızda saklanır ve hesabınızı sildiğinizde kaldırılır.</li>
+      <li><strong>Fotoğraflar:</strong> Ayrıntılar için aşağıdaki 3. bölüme bakın.</li>
     </ul>
 
     <h2>2. Bilgilerinizi Nasıl Kullanıyoruz</h2>
@@ -147,37 +162,51 @@
 
     <h2>3. Fotoğraf İşleme ve Gizlilik</h2>
     <div class="highlight">
-      <p>✅ Tüm fotoğraf iyileştirme işlemleri cihazınızda Skia kullanılarak gerçekleşir. Fotoğraflarınız sunucularımıza kalıcı olarak yüklenmez veya saklanmaz.</p>
+      <p>Fotoğraf iyileştirme (renk düzeltme, parlaklık, kontrast ayarları) tamamen cihazınızda yerel işleme motorumuz kullanılarak gerçekleştirilir. Orijinal fotoğraflarınız sunucularımıza hiçbir zaman yüklenmez.</p>
     </div>
-    <p>AI parametre analizi için fotoğraflar, güvenli Firebase Cloud Functions aracılığıyla Google Gemini API'ye geçici olarak iletilir. Bu iletim şifrelidir ve analiz tamamlandıktan sonra fotoğraflar saklanmaz.</p>
+    <p>AI sahne tespiti ve parametre analizi için seçilen fotoğrafın yeniden boyutlandırılmış versiyonu (maksimum 1280px), şifreli HTTPS bağlantısı üzerinden Firebase Cloud Functions aracılığıyla güvenli bir şekilde Google Gemini API'ye iletilir.</p>
+    <p><strong>Fotoğraflar sunucularımızda kalıcı olarak saklanmaz ve analiz tamamlandıktan sonra silinir.</strong> Fotoğraflarınızı yapay zeka modellerini eğitmek veya iyileştirme parametreleri oluşturmak dışında herhangi bir amaçla kullanmıyoruz.</p>
 
-    <h2>4. Üçüncü Taraf Hizmetleri</h2>
+    <h2>4. Yapay Zeka Sonuçları Sorumluluk Reddi</h2>
+    <div class="warning">
+      <p>ProLens AI, görüntü iyileştirme önerileri ve işleme parametreleri oluşturmak için yapay zeka kullanır. Sonuçlar, görüntü kalitesine, ışık koşullarına ve konuya bağlı olarak değişebilir. Kullanıcılar, işlenmiş görüntüleri ticari veya profesyonel amaçlarla kullanmadan önce incelemekten sorumludur. ProLens AI, işlenmiş görüntülerin belirli kalite standartlarını karşılayacağını garanti etmez.</p>
+    </div>
+
+    <h2>5. Üçüncü Taraf Hizmetleri</h2>
     <ul>
       <li><strong>Firebase (Google):</strong> Kimlik doğrulama, veritabanı ve cloud functions.</li>
       <li><strong>Google Gemini API:</strong> AI fotoğraf parametre analizi.</li>
       <li><strong>Google Play Billing:</strong> Uygulama içi satın alma ve abonelikler.</li>
       <li><strong>Google Sign-In:</strong> İsteğe bağlı kimlik doğrulama yöntemi.</li>
+      <li><strong>RevenueCat (uygulanabilirse):</strong> Abonelik yönetimi ve satın alma doğrulaması.</li>
     </ul>
 
-    <h2>5. Veri Saklama Süresi</h2>
-    <p>Hesap verileriniz, hesabınız aktif olduğu sürece saklanır. Fotoğraflar işlem sonrası silinir. Kullanım istatistikleri en fazla 12 ay saklanır. Hesap silinmesi durumunda tüm kişisel veriler 30 gün içinde kaldırılır.</p>
+    <h2>6. Veri Saklama Süresi</h2>
+    <ul>
+      <li><strong>Hesap verileri:</strong> Hesabınız aktif olduğu sürece saklanır.</li>
+      <li><strong>Fotoğraflar:</strong> İşlem sonrası saklanmaz, analiz sonrasında hemen silinir.</li>
+      <li><strong>Kullanım istatistikleri</strong> (işlenen fotoğraf sayısı, kullanılan kredi, plan türü): En fazla 12 ay saklanır.</li>
+      <li><strong>Cihaz kimliği:</strong> Hesap silinene kadar saklanır.</li>
+      <li><strong>Hesap silinmesi durumunda:</strong> Tüm kişisel veriler 30 gün içinde kaldırılır.</li>
+    </ul>
 
-    <h2>6. Haklarınız (KVKK / GDPR)</h2>
+    <h2>7. Haklarınız (KVKK / GDPR)</h2>
     <ul>
       <li>Hakkınızdaki kişisel verilere erişim hakkı.</li>
       <li>Hatalı verilerin düzeltilmesini talep etme hakkı.</li>
       <li>Hesabınızın ve ilgili tüm verilerin silinmesini talep etme hakkı.</li>
-      <li>Veri taşınabilirliği — verilerinizi makine tarafından okunabilir biçimde alma hakkı.</li>
+      <li>Veri taşınabilirliği hakkı.</li>
+      <li>Kişisel verilerinizin işlenmesine itiraz etme hakkı.</li>
     </ul>
     <p>Bu hakları kullanmak için uygulamadaki hesap silme özelliğini kullanabilir veya <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
 
-    <h2>7. Çocukların Gizliliği</h2>
-    <p>ProLens AI, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamaz. 13 yaşın altında bir çocuğun bize kişisel bilgi sağladığını öğrenirsek, bu bilgileri derhal sileriz.</p>
+    <h2>8. Çocukların Gizliliği</h2>
+    <p>ProLens AI, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamaz.</p>
 
-    <h2>8. Veri Güvenliği</h2>
-    <p>Firebase App Check, şifreli veri iletimi (HTTPS/TLS) ve Firestore güvenlik kuralları dahil endüstri standardı güvenlik önlemleri uyguluyoruz.</p>
+    <h2>9. Veri Güvenliği</h2>
+    <p>Firebase App Check (Play Integrity API), şifreli veri iletimi (HTTPS/TLS) ve kullanıcıların yalnızca kendi verilerine erişebildiğini sağlayan Firestore güvenlik kuralları dahil endüstri standardı güvenlik önlemleri uyguluyoruz.</p>
 
-    <h2>9. Politika Değişiklikleri</h2>
+    <h2>10. Politika Değişiklikleri</h2>
     <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler için uygulama veya e-posta yoluyla bildirim yapacağız.</p>
 
     <hr class="divider">
