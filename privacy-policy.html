@@ -40,17 +40,15 @@
 <div class="container">
   <div class="logo">PROLENS<span>AI</span></div>
   <div class="subtitle">Architectural Photo Neural Processor</div>
-
   <div class="lang-tabs">
     <button class="lang-tab active" onclick="showLang('en', this)">English</button>
     <button class="lang-tab" onclick="showLang('tr', this)">Türkçe</button>
   </div>
 
-  <!-- ENGLISH -->
+  <!-- ===== ENGLISH ===== -->
   <div class="section active" id="en">
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: June 10, 2026</div>
-
+    <div class="updated">Last updated: June 11, 2026</div>
     <div class="highlight">
       <p>ProLens AI is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
     </div>
@@ -76,8 +74,8 @@
     <div class="highlight">
       <p>Photo enhancement (color correction, brightness, contrast adjustments) is performed entirely on your device using our local processing engine. Your original photos are never uploaded to our servers.</p>
     </div>
-    <p>For AI scene detection and parameter analysis, a resized version (maximum 1280px) of the selected photo is securely transmitted to Google Gemini API through Firebase Cloud Functions over an encrypted HTTPS connection.</p>
-    <p><strong>Photos are not permanently stored on our servers and are deleted after analysis is complete.</strong> We do not use your photos for training AI models or any purpose other than generating enhancement parameters for your session.</p>
+    <p>For AI scene detection and parameter analysis, a resized version (maximum 1280px) of the uploaded photo may be temporarily transmitted to Google Gemini AI services solely for image analysis purposes. This transmission occurs over an encrypted HTTPS connection via Firebase Cloud Functions.</p>
+    <p><strong>Photos are not permanently stored on our servers and are deleted after processing is complete.</strong> We do not use your photos for training AI models or any purpose other than generating enhancement parameters for your session.</p>
 
     <h2>4. AI Generated Results Disclaimer</h2>
     <div class="warning">
@@ -87,7 +85,7 @@
     <h2>5. Third-Party Services</h2>
     <ul>
       <li><strong>Firebase (Google):</strong> Authentication, database, and cloud functions. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
-      <li><strong>Google Gemini API:</strong> AI photo parameter analysis. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      <li><strong>Google Gemini API:</strong> AI photo parameter analysis. A resized version of your photo is temporarily transmitted for analysis only. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
       <li><strong>Google Play Billing:</strong> In-app purchases and subscriptions. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
       <li><strong>Google Sign-In:</strong> Optional authentication method.</li>
       <li><strong>RevenueCat (if applicable):</strong> Subscription management and purchase validation. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
@@ -110,6 +108,7 @@
       <li>Request deletion of your account and all associated data.</li>
       <li>Data portability — receive your data in a machine-readable format.</li>
       <li>Object to processing of your personal data.</li>
+      <li>Withdraw consent for processing where applicable.</li>
     </ul>
     <p>To exercise these rights, delete your account directly in the app or contact us at <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a>.</p>
 
@@ -118,6 +117,7 @@
 
     <h2>9. Data Security</h2>
     <p>We implement industry-standard security measures including Firebase App Check (Play Integrity API), encrypted data transmission (HTTPS/TLS), and Firestore security rules that ensure users can only access their own data.</p>
+    <p>While we implement these industry-standard security measures, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
 
     <h2>10. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or by email. Continued use of ProLens AI after changes constitutes acceptance of the updated policy.</p>
@@ -130,15 +130,15 @@
       <div class="footer-links">
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-of-service.html">Terms of Service</a>
+        <a href="delete-account.html">Delete Account</a>
       </div>
     </div>
   </div>
 
-  <!-- TÜRKÇE -->
+  <!-- ===== TÜRKÇE ===== -->
   <div class="section" id="tr">
     <h1>Gizlilik Politikası</h1>
-    <div class="updated">Son güncelleme: 10 Haziran 2026</div>
-
+    <div class="updated">Son güncelleme: 11 Haziran 2026</div>
     <div class="highlight">
       <p>ProLens AI, kullanıcı gizliliğine saygı duyar. Bu politika, hangi verileri topladığımızı, nasıl kullandığımızı ve haklarınızı açıklar.</p>
     </div>
@@ -147,7 +147,7 @@
     <ul>
       <li><strong>Hesap bilgileri:</strong> E-posta adresi, kimlik doğrulama bilgileri (Firebase Authentication) ve kayıt tarihi.</li>
       <li><strong>Kullanım istatistikleri:</strong> Kullanılan kredi miktarı, plan türü, işlenen fotoğraf sayısı ve özellik kullanım sayıları. Hesabınızı yönetmek ve hizmeti iyileştirmek amacıyla en fazla 12 ay saklanır.</li>
-      <li><strong>Cihaz bilgisi:</strong> Android cihaz kimliği (Android Reklam Kimliği veya donanım tanımlayıcısı), yalnızca sahtekarlığı önlemek amacıyla kullanılır — özellikle cihaz başına ücretsiz kredi politikasını uygulamak için. Bu kimlik, hesabınıza bağlı olarak veritabanımızda saklanır ve hesabınızı sildiğinizde kaldırılır.</li>
+      <li><strong>Cihaz bilgisi:</strong> Android cihaz kimliği (Android Reklam Kimliği veya donanım tanımlayıcısı), yalnızca sahtekarlığı önlemek amacıyla kullanılır. Bu kimlik hesabınıza bağlı olarak saklanır ve hesap silindiğinde kaldırılır.</li>
       <li><strong>Fotoğraflar:</strong> Ayrıntılar için aşağıdaki 3. bölüme bakın.</li>
     </ul>
 
@@ -155,7 +155,7 @@
     <ul>
       <li>Kimlik doğrulama ve hesap yönetimi için.</li>
       <li>Kredi bakiyesi ve abonelik planı yönetimi için.</li>
-      <li>AI destekli fotoğraf iyileştirme ve analizi için.</li>
+      <li>Yapay zeka destekli fotoğraf iyileştirme ve analizi için.</li>
       <li>Kredi sistemi sahtekarlığını önlemek için.</li>
       <li>Uygulama performansını geliştirmek için.</li>
     </ul>
@@ -164,18 +164,18 @@
     <div class="highlight">
       <p>Fotoğraf iyileştirme (renk düzeltme, parlaklık, kontrast ayarları) tamamen cihazınızda yerel işleme motorumuz kullanılarak gerçekleştirilir. Orijinal fotoğraflarınız sunucularımıza hiçbir zaman yüklenmez.</p>
     </div>
-    <p>AI sahne tespiti ve parametre analizi için seçilen fotoğrafın yeniden boyutlandırılmış versiyonu (maksimum 1280px), şifreli HTTPS bağlantısı üzerinden Firebase Cloud Functions aracılığıyla güvenli bir şekilde Google Gemini API'ye iletilir.</p>
-    <p><strong>Fotoğraflar sunucularımızda kalıcı olarak saklanmaz ve analiz tamamlandıktan sonra silinir.</strong> Fotoğraflarınızı yapay zeka modellerini eğitmek veya iyileştirme parametreleri oluşturmak dışında herhangi bir amaçla kullanmıyoruz.</p>
+    <p>Yapay zeka sahne tespiti ve parametre analizi için yüklenen fotoğrafın yeniden boyutlandırılmış bir versiyonu (maksimum 1280px), yalnızca görüntü analizi amacıyla Google Gemini AI servislerine geçici olarak iletilebilir. Bu iletim, Firebase Cloud Functions aracılığıyla şifreli HTTPS bağlantısı üzerinden gerçekleşir.</p>
+    <p><strong>Fotoğraflar sunucularımızda kalıcı olarak saklanmaz ve işlem tamamlandıktan sonra silinir.</strong> Fotoğraflarınızı yapay zeka modeli eğitimi veya oturum parametresi oluşturma dışında herhangi bir amaçla kullanmıyoruz.</p>
 
     <h2>4. Yapay Zeka Sonuçları Sorumluluk Reddi</h2>
     <div class="warning">
-      <p>ProLens AI, görüntü iyileştirme önerileri ve işleme parametreleri oluşturmak için yapay zeka kullanır. Sonuçlar, görüntü kalitesine, ışık koşullarına ve konuya bağlı olarak değişebilir. Kullanıcılar, işlenmiş görüntüleri ticari veya profesyonel amaçlarla kullanmadan önce incelemekten sorumludur. ProLens AI, işlenmiş görüntülerin belirli kalite standartlarını karşılayacağını garanti etmez.</p>
+      <p>ProLens AI, görüntü iyileştirme önerileri ve işleme parametreleri oluşturmak için yapay zeka kullanır. Sonuçlar görüntü kalitesine, ışık koşullarına ve konuya bağlı olarak değişebilir. Kullanıcılar, işlenmiş görüntüleri ticari veya profesyonel amaçlarla kullanmadan önce incelemekten sorumludur. ProLens AI, işlenmiş görüntülerin belirli kalite standartlarını karşılayacağını garanti etmez.</p>
     </div>
 
     <h2>5. Üçüncü Taraf Hizmetleri</h2>
     <ul>
       <li><strong>Firebase (Google):</strong> Kimlik doğrulama, veritabanı ve cloud functions.</li>
-      <li><strong>Google Gemini API:</strong> AI fotoğraf parametre analizi.</li>
+      <li><strong>Google Gemini API:</strong> Yapay zeka fotoğraf parametre analizi. Fotoğrafınızın yeniden boyutlandırılmış versiyonu yalnızca analiz amacıyla geçici olarak iletilir.</li>
       <li><strong>Google Play Billing:</strong> Uygulama içi satın alma ve abonelikler.</li>
       <li><strong>Google Sign-In:</strong> İsteğe bağlı kimlik doğrulama yöntemi.</li>
       <li><strong>RevenueCat (uygulanabilirse):</strong> Abonelik yönetimi ve satın alma doğrulaması.</li>
@@ -185,29 +185,32 @@
     <ul>
       <li><strong>Hesap verileri:</strong> Hesabınız aktif olduğu sürece saklanır.</li>
       <li><strong>Fotoğraflar:</strong> İşlem sonrası saklanmaz, analiz sonrasında hemen silinir.</li>
-      <li><strong>Kullanım istatistikleri</strong> (işlenen fotoğraf sayısı, kullanılan kredi, plan türü): En fazla 12 ay saklanır.</li>
+      <li><strong>Kullanım istatistikleri:</strong> En fazla 12 ay saklanır.</li>
       <li><strong>Cihaz kimliği:</strong> Hesap silinene kadar saklanır.</li>
       <li><strong>Hesap silinmesi durumunda:</strong> Tüm kişisel veriler 30 gün içinde kaldırılır.</li>
     </ul>
 
     <h2>7. Haklarınız (KVKK / GDPR)</h2>
+    <p>Aşağıdaki haklara sahipsiniz:</p>
     <ul>
       <li>Hakkınızdaki kişisel verilere erişim hakkı.</li>
       <li>Hatalı verilerin düzeltilmesini talep etme hakkı.</li>
       <li>Hesabınızın ve ilgili tüm verilerin silinmesini talep etme hakkı.</li>
       <li>Veri taşınabilirliği hakkı.</li>
       <li>Kişisel verilerinizin işlenmesine itiraz etme hakkı.</li>
+      <li>Uygulanabilir durumlarda veri işleme rızanızı geri çekme hakkı.</li>
     </ul>
     <p>Bu hakları kullanmak için uygulamadaki hesap silme özelliğini kullanabilir veya <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
 
     <h2>8. Çocukların Gizliliği</h2>
-    <p>ProLens AI, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamaz.</p>
+    <p>ProLens AI, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamaz. 13 yaşın altında bir çocuğun kişisel bilgi sağladığını tespit edersek, bu bilgileri derhal sileriz.</p>
 
     <h2>9. Veri Güvenliği</h2>
     <p>Firebase App Check (Play Integrity API), şifreli veri iletimi (HTTPS/TLS) ve kullanıcıların yalnızca kendi verilerine erişebildiğini sağlayan Firestore güvenlik kuralları dahil endüstri standardı güvenlik önlemleri uyguluyoruz.</p>
+    <p>Bu endüstri standardı güvenlik önlemlerini uygulamamıza karşın, hiçbir elektronik iletim veya depolama yöntemi %100 güvenli değildir ve mutlak güvenliği garanti edemeyiz.</p>
 
     <h2>10. Politika Değişiklikleri</h2>
-    <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler için uygulama veya e-posta yoluyla bildirim yapacağız.</p>
+    <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler için uygulama veya e-posta yoluyla bildirim yapacağız. Değişikliklerden sonra ProLens AI'ı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
 
     <hr class="divider">
     <div class="contact-box">
@@ -217,10 +220,10 @@
       <div class="footer-links">
         <a href="privacy-policy.html">Gizlilik Politikası</a>
         <a href="terms-of-service.html">Kullanım Şartları</a>
+        <a href="delete-account.html">Hesabı Sil</a>
       </div>
     </div>
   </div>
-
 </div>
 <script>
 function showLang(lang, el) {
