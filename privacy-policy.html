@@ -38,8 +38,8 @@
 </head>
 <body>
 <div class="container">
-  <div class="logo">PROLENS<span>AI</span></div>
-  <div class="subtitle">Architectural Photo Neural Processor</div>
+  <div class="logo">PROLENS <span>AI</span></div>
+  <div class="subtitle">AI Photo Enhancement</div>
   <div class="lang-tabs">
     <button class="lang-tab active" onclick="showLang('en', this)">English</button>
     <button class="lang-tab" onclick="showLang('tr', this)">Türkçe</button>
@@ -48,89 +48,103 @@
   <!-- ===== ENGLISH ===== -->
   <div class="section active" id="en">
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: June 11, 2026</div>
+    <div class="updated">Last updated: July 16, 2026</div>
     <div class="highlight">
       <p>ProLens AI is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
     </div>
 
-    <h2>1. Information We Collect</h2>
+    <h2>1. Data Controller</h2>
+    <p>Data Controller: <strong>Ahmet İnce – ProLens AI</strong><br>
+    Country: Türkiye<br>
+    Email: <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a></p>
+
+    <h2>2. Information We Collect</h2>
     <ul>
-      <li><strong>Account information:</strong> Email address, authentication credentials (via Firebase Authentication), and registration date.</li>
-      <li><strong>Usage statistics:</strong> Credits used, plan type, number of photos processed, and feature usage counts. These are retained for up to 12 months to manage your account and improve the service.</li>
-      <li><strong>Device information:</strong> Android device ID (Android Advertising ID or hardware identifier), used solely for fraud prevention — specifically to enforce our one free credit per device policy. This ID is stored in our database linked to your account and is deleted when you delete your account.</li>
-      <li><strong>Photos:</strong> See Section 3 below for full details.</li>
+      <li><strong>Contact information:</strong> Email address collected at registration.</li>
+      <li><strong>User ID:</strong> Unique identifier assigned to your account.</li>
+      <li><strong>Account information:</strong> Authentication credentials via Firebase Authentication and registration date.</li>
+      <li><strong>Usage statistics:</strong> Credits used, plan type, number of photos processed, and feature usage counts.</li>
+      <li><strong>Device identifiers:</strong> Device ID used solely for fraud prevention. Deleted when you delete your account.</li>
+      <li><strong>Purchase history:</strong> Subscription status, credit balance, and transaction IDs managed via RevenueCat and Google Play / Apple App Store. We do not store payment card details.</li>
+      <li><strong>Advertising data:</strong> Google AdMob may collect device identifiers for ad serving as described in Google's Privacy Policy.</li>
+      <li><strong>Diagnostics:</strong> Crash reports and performance data may be collected via Firebase Crashlytics and Analytics.</li>
+      <li><strong>User content (photos):</strong> See Section 4 below.</li>
     </ul>
 
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-      <li>To authenticate your identity and manage your account.</li>
-      <li>To manage your credit balance and subscription plan.</li>
-      <li>To provide AI-powered photo enhancement and analysis.</li>
-      <li>To prevent fraud and abuse of our credit system.</li>
-      <li>To improve app performance and user experience.</li>
-    </ul>
+    <h2>3. Legal Basis and Collection Method</h2>
+    <p>We collect personal data electronically through account registration, app usage, authentication providers, purchase platforms, advertising services, and automated application logs.</p>
+    <p>Depending on the processing activity, data is processed because it is necessary to provide the service and perform the user agreement, comply with legal obligations, establish or protect legal rights, pursue legitimate interests without overriding user rights, or based on consent where required.</p>
 
-    <h2>3. Photo Processing & Privacy</h2>
+    <h2>4. Photo Processing & Privacy</h2>
     <div class="highlight">
-      <p>Photo enhancement (color correction, brightness, contrast adjustments) is performed entirely on your device using our local processing engine. Your original photos are never uploaded to our servers.</p>
+      <p>Photo enhancement is performed entirely on your device using our local processing engine. Your original photos are never uploaded to our servers.</p>
     </div>
-    <p>For AI scene detection and parameter analysis, a resized version (maximum 1280px) of the uploaded photo may be temporarily transmitted to Google Gemini AI services solely for image analysis purposes. This transmission occurs over an encrypted HTTPS connection via Firebase Cloud Functions.</p>
-    <p><strong>Photos are not permanently stored on our servers and are deleted after processing is complete.</strong> We do not use your photos for training AI models or any purpose other than generating enhancement parameters for your session.</p>
+    <p>For AI scene detection and parameter analysis, a resized version (max 1280px) of your photo may be temporarily transmitted to Google Gemini AI via Firebase Cloud Functions over an encrypted HTTPS connection.</p>
+    <p>We do not intentionally store uploaded photo data in our own databases or cloud storage. The resized image is transmitted only for the purpose of generating enhancement parameters and is not retained by ProLens AI after the request is completed. Processing by Google is subject to Google's applicable data processing and privacy terms.</p>
+    <p>We do not use your photos for AI model training or any purpose other than generating enhancement parameters for your session.</p>
 
-    <h2>4. AI Generated Results Disclaimer</h2>
-    <div class="warning">
-      <p>ProLens AI uses artificial intelligence to generate image enhancement recommendations and processing parameters. Results may vary depending on image quality, lighting conditions, and subject matter. Users remain responsible for reviewing processed images before commercial or professional use. ProLens AI makes no guarantee that processed images will meet specific quality standards or requirements.</p>
-    </div>
+    <h2>5. Automated Processing</h2>
+    <p>ProLens AI uses automated image analysis to recommend photo adjustment parameters. This processing does not make decisions that produce legal or similarly significant effects on users.</p>
 
-    <h2>5. Third-Party Services</h2>
+    <h2>6. Advertising (Google AdMob)</h2>
+    <p>We use Google AdMob to show rewarded advertisements. For users in regions where consent or privacy choices are required, we use Google's User Messaging Platform (UMP) to request and manage applicable advertising privacy choices before requesting ads.</p>
+    <p>Where required, a privacy options entry point will be made available in the app so that users can review applicable advertising privacy choices.</p>
+    <p>For more information, see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+    <h2>7. In-App Purchases & Subscriptions</h2>
     <ul>
-      <li><strong>Firebase (Google):</strong> Authentication, database, and cloud functions. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
-      <li><strong>Google Gemini API:</strong> AI photo parameter analysis. A resized version of your photo is temporarily transmitted for analysis only. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-      <li><strong>Google Play Billing:</strong> In-app purchases and subscriptions. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-      <li><strong>Google Sign-In:</strong> Optional authentication method.</li>
-      <li><strong>RevenueCat (if applicable):</strong> Subscription management and purchase validation. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
+      <li>In-app purchases are processed by Google Play (Android) or Apple App Store (iOS).</li>
+      <li>Subscription management is handled by RevenueCat. RevenueCat may collect purchase history and subscription status.</li>
+      <li>We do not store your payment card details. All payments are processed by Google or Apple.</li>
+      <li>Purchased credits are non-transferable and cannot be exchanged for cash.</li>
     </ul>
 
-    <h2>6. Data Retention</h2>
+    <h2>8. Third-Party Services</h2>
+    <ul>
+      <li><strong>Firebase (Google):</strong> Authentication, database, cloud functions, analytics, and crash reporting. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+      <li><strong>Google Gemini API:</strong> AI photo parameter analysis. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      <li><strong>Google AdMob:</strong> Rewarded advertising. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      <li><strong>Google Play Billing / Apple App Store:</strong> In-app purchases and subscriptions.</li>
+      <li><strong>Google Sign-In / Apple Sign-In:</strong> Optional authentication methods.</li>
+      <li><strong>RevenueCat:</strong> Subscription management and purchase validation. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
+    </ul>
+
+    <h2>9. International Data Transfers</h2>
+    <p>Some service providers (including Firebase, Google, RevenueCat, and Apple) may process data on servers located outside your country, including the United States and other regions. Such transfers are made subject to applicable contractual, technical, and legal safeguards.</p>
+
+    <h2>10. Data Retention</h2>
     <ul>
       <li><strong>Account data:</strong> Retained while your account is active.</li>
-      <li><strong>Photos:</strong> Not stored after processing. Deleted immediately after analysis.</li>
-      <li><strong>Usage statistics</strong> (photos processed count, credits used, plan type): Retained for up to 12 months.</li>
+      <li><strong>Photos:</strong> Not stored in our systems after processing.</li>
+      <li><strong>Usage statistics:</strong> Retained for up to 12 months.</li>
       <li><strong>Device ID:</strong> Retained until account deletion.</li>
-      <li><strong>Upon account deletion:</strong> All personal data is removed within 30 days.</li>
+      <li><strong>Upon account deletion:</strong> Account-associated data under our control is generally deleted when the deletion request is processed. Limited records may be retained where required for security, fraud prevention, dispute resolution, tax, accounting, or legal compliance.</li>
+      <li><strong>Purchase and legal records:</strong> Certain records may be retained for the period required by applicable tax, accounting, fraud-prevention, dispute-resolution, or other legal obligations.</li>
     </ul>
 
-    <h2>7. Your Rights (GDPR / KVKK)</h2>
-    <p>You have the right to:</p>
-    <ul>
-      <li>Access the personal data we hold about you.</li>
-      <li>Request correction of inaccurate data.</li>
-      <li>Request deletion of your account and all associated data.</li>
-      <li>Data portability — receive your data in a machine-readable format.</li>
-      <li>Object to processing of your personal data.</li>
-      <li>Withdraw consent for processing where applicable.</li>
-    </ul>
-    <p>To exercise these rights, delete your account directly in the app or contact us at <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a>.</p>
+    <h2>11. Your Rights (GDPR / KVKK)</h2>
+    <p>You have the right to access, correct, delete, and port your personal data. You also have the right to object to processing and withdraw consent where applicable.</p>
+    <p>To exercise these rights, delete your account in the app or contact us at <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a>.</p>
 
-    <h2>8. Children's Privacy</h2>
-    <p>ProLens AI is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will delete it immediately.</p>
+    <h2>12. Children's Privacy</h2>
+    <p>Users must be at least 13 years old, or the higher minimum age required in their country. ProLens AI is not designed for children, and we do not knowingly collect personal data from children below the applicable minimum age.</p>
 
-    <h2>9. Data Security</h2>
-    <p>We implement industry-standard security measures including Firebase App Check (Play Integrity API), encrypted data transmission (HTTPS/TLS), and Firestore security rules that ensure users can only access their own data.</p>
-    <p>While we implement these industry-standard security measures, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+    <h2>13. Data Security</h2>
+    <p>We implement Firebase App Check (Play Integrity API), encrypted data transmission (HTTPS/TLS), and Firestore security rules that ensure users can only access their own data. No method of electronic transmission is 100% secure.</p>
 
-    <h2>10. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or by email. Continued use of ProLens AI after changes constitutes acceptance of the updated policy.</p>
+    <h2>14. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app. Continued use after changes constitutes acceptance of the updated policy.</p>
 
     <hr class="divider">
     <div class="contact-box">
-      <h3>📬 Contact Us</h3>
-      <p>Developer: <strong>Ahmet İnce</strong></p>
+      <h3>Contact Us</h3>
+      <p>Data Controller / Developer: <strong>Ahmet İnce – ProLens AI</strong></p>
+      <p>Country: Türkiye</p>
       <p>Email: <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a></p>
       <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-of-service.html">Terms of Service</a>
-        <a href="delete-account.html">Delete Account</a>
+        <a href="https://ince34.github.io/prolens-privacy/privacy-policy.html">Privacy Policy</a>
+        <a href="https://ince34.github.io/prolens-privacy/terms-of-service.html">Terms of Service</a>
+        <a href="https://ince34.github.io/prolens-privacy/delete-account.html">Delete Account</a>
       </div>
     </div>
   </div>
@@ -138,89 +152,101 @@
   <!-- ===== TÜRKÇE ===== -->
   <div class="section" id="tr">
     <h1>Gizlilik Politikası</h1>
-    <div class="updated">Son güncelleme: 11 Haziran 2026</div>
+    <div class="updated">Son güncelleme: 16 Temmuz 2026</div>
     <div class="highlight">
-      <p>ProLens AI, kullanıcı gizliliğine saygı duyar. Bu politika, hangi verileri topladığımızı, nasıl kullandığımızı ve haklarınızı açıklar.</p>
+      <p>ProLens AI, kullanıcı gizliliğine saygı duyar. Bu politika hangi verileri topladığımızı, nasıl kullandığımızı ve haklarınızı açıklar.</p>
     </div>
 
-    <h2>1. Topladığımız Bilgiler</h2>
+    <h2>1. Veri Sorumlusu</h2>
+    <p>Veri Sorumlusu: <strong>Ahmet İnce – ProLens AI</strong><br>
+    Ülke: Türkiye<br>
+    E-posta: <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a></p>
+
+    <h2>2. Topladığımız Bilgiler</h2>
     <ul>
-      <li><strong>Hesap bilgileri:</strong> E-posta adresi, kimlik doğrulama bilgileri (Firebase Authentication) ve kayıt tarihi.</li>
-      <li><strong>Kullanım istatistikleri:</strong> Kullanılan kredi miktarı, plan türü, işlenen fotoğraf sayısı ve özellik kullanım sayıları. Hesabınızı yönetmek ve hizmeti iyileştirmek amacıyla en fazla 12 ay saklanır.</li>
-      <li><strong>Cihaz bilgisi:</strong> Android cihaz kimliği (Android Reklam Kimliği veya donanım tanımlayıcısı), yalnızca sahtekarlığı önlemek amacıyla kullanılır. Bu kimlik hesabınıza bağlı olarak saklanır ve hesap silindiğinde kaldırılır.</li>
-      <li><strong>Fotoğraflar:</strong> Ayrıntılar için aşağıdaki 3. bölüme bakın.</li>
+      <li><strong>İletişim bilgisi:</strong> Kayıt sırasında toplanan e-posta adresi.</li>
+      <li><strong>Kullanıcı kimliği:</strong> Hesabınıza atanan benzersiz tanımlayıcı.</li>
+      <li><strong>Hesap bilgileri:</strong> Firebase Authentication aracılığıyla kimlik doğrulama bilgileri ve kayıt tarihi.</li>
+      <li><strong>Kullanım istatistikleri:</strong> Kullanılan kredi, plan türü, işlenen fotoğraf sayısı.</li>
+      <li><strong>Cihaz tanımlayıcıları:</strong> Yalnızca sahtekarlığı önlemek amacıyla cihaz kimliği. Hesap silindiğinde kaldırılır.</li>
+      <li><strong>Satın alma geçmişi:</strong> Abonelik durumu, kredi bakiyesi ve işlem kimlikleri RevenueCat ile Google Play / Apple App Store aracılığıyla yönetilir. Ödeme kartı bilgilerinizi saklamıyoruz.</li>
+      <li><strong>Reklam verileri:</strong> Google AdMob, Google Gizlilik Politikası'nda açıklandığı şekilde reklam sunmak için cihaz tanımlayıcıları toplayabilir.</li>
+      <li><strong>Tanılama verileri:</strong> Firebase Crashlytics ve Analytics aracılığıyla çökme raporları ve performans verileri toplanabilir.</li>
+      <li><strong>Kullanıcı içeriği (fotoğraflar):</strong> Ayrıntılar için Bölüm 4'e bakın.</li>
     </ul>
 
-    <h2>2. Bilgilerinizi Nasıl Kullanıyoruz</h2>
-    <ul>
-      <li>Kimlik doğrulama ve hesap yönetimi için.</li>
-      <li>Kredi bakiyesi ve abonelik planı yönetimi için.</li>
-      <li>Yapay zeka destekli fotoğraf iyileştirme ve analizi için.</li>
-      <li>Kredi sistemi sahtekarlığını önlemek için.</li>
-      <li>Uygulama performansını geliştirmek için.</li>
-    </ul>
+    <h2>3. Kişisel Verilerin Toplanma Yöntemi ve Hukuki Sebebi</h2>
+    <p>Kişisel veriler; hesap kaydı, uygulama kullanımı, kimlik doğrulama sağlayıcıları, satın alma platformları, reklam hizmetleri ve otomatik uygulama kayıtları aracılığıyla elektronik ortamda toplanır.</p>
+    <p>Veriler, ilgili işleme faaliyetine göre; hizmetin sunulması ve kullanıcı sözleşmesinin ifası, hukuki yükümlülüklerin yerine getirilmesi, bir hakkın tesisi veya korunması, kullanıcıların temel haklarına zarar vermemek kaydıyla meşru menfaatlerimiz ya da gerekli hâllerde açık rıza hukuki sebeplerine dayanılarak işlenir.</p>
 
-    <h2>3. Fotoğraf İşleme ve Gizlilik</h2>
+    <h2>4. Fotoğraf İşleme ve Gizlilik</h2>
     <div class="highlight">
-      <p>Fotoğraf iyileştirme (renk düzeltme, parlaklık, kontrast ayarları) tamamen cihazınızda yerel işleme motorumuz kullanılarak gerçekleştirilir. Orijinal fotoğraflarınız sunucularımıza hiçbir zaman yüklenmez.</p>
+      <p>Fotoğraf iyileştirme tamamen cihazınızda yerel işleme motorumuz kullanılarak gerçekleştirilir. Orijinal fotoğraflarınız sunucularımıza hiçbir zaman yüklenmez.</p>
     </div>
-    <p>Yapay zeka sahne tespiti ve parametre analizi için yüklenen fotoğrafın yeniden boyutlandırılmış bir versiyonu (maksimum 1280px), yalnızca görüntü analizi amacıyla Google Gemini AI servislerine geçici olarak iletilebilir. Bu iletim, Firebase Cloud Functions aracılığıyla şifreli HTTPS bağlantısı üzerinden gerçekleşir.</p>
-    <p><strong>Fotoğraflar sunucularımızda kalıcı olarak saklanmaz ve işlem tamamlandıktan sonra silinir.</strong> Fotoğraflarınızı yapay zeka modeli eğitimi veya oturum parametresi oluşturma dışında herhangi bir amaçla kullanmıyoruz.</p>
+    <p>Yapay zeka sahne tespiti ve parametre analizi için fotoğrafınızın yeniden boyutlandırılmış versiyonu (maks. 1280px) şifreli HTTPS bağlantısı üzerinden Firebase Cloud Functions aracılığıyla Google Gemini AI'a geçici olarak iletilebilir.</p>
+    <p>Gönderilen fotoğraf verilerini kendi veritabanlarımızda veya bulut depolama alanımızda kasıtlı olarak saklamıyoruz. Yeniden boyutlandırılmış görsel yalnızca iyileştirme parametreleri oluşturmak amacıyla iletilir ve istek tamamlandıktan sonra ProLens AI tarafından tutulmaz. Google tarafından gerçekleştirilen işlemler, Google'ın geçerli veri işleme ve gizlilik şartlarına tabidir.</p>
 
-    <h2>4. Yapay Zeka Sonuçları Sorumluluk Reddi</h2>
-    <div class="warning">
-      <p>ProLens AI, görüntü iyileştirme önerileri ve işleme parametreleri oluşturmak için yapay zeka kullanır. Sonuçlar görüntü kalitesine, ışık koşullarına ve konuya bağlı olarak değişebilir. Kullanıcılar, işlenmiş görüntüleri ticari veya profesyonel amaçlarla kullanmadan önce incelemekten sorumludur. ProLens AI, işlenmiş görüntülerin belirli kalite standartlarını karşılayacağını garanti etmez.</p>
-    </div>
+    <h2>5. Otomatik İşleme</h2>
+    <p>ProLens AI, fotoğraf ayar parametreleri önermek için otomatik görüntü analizi kullanır. Bu işleme, kullanıcılar üzerinde hukuki veya benzeri önemli etkiler doğuran kararlar almaz.</p>
 
-    <h2>5. Üçüncü Taraf Hizmetleri</h2>
+    <h2>6. Reklamlar (Google AdMob)</h2>
+    <p>Ödüllü reklam göstermek için Google AdMob kullanıyoruz. Onay veya gizlilik tercihlerinin gerekli olduğu bölgelerde, reklam talep edilmeden önce geçerli reklam gizliliği tercihlerini almak ve yönetmek için Google Kullanıcı Mesajlaşma Platformu'nu (UMP) kullanırız.</p>
+    <p>Gerekli olduğu durumlarda, kullanıcıların geçerli reklam gizliliği tercihlerini inceleyebilmesi için uygulamada bir gizlilik seçenekleri giriş noktası sunulacaktır.</p>
+
+    <h2>7. Uygulama İçi Satın Alma ve Abonelikler</h2>
     <ul>
-      <li><strong>Firebase (Google):</strong> Kimlik doğrulama, veritabanı ve cloud functions.</li>
-      <li><strong>Google Gemini API:</strong> Yapay zeka fotoğraf parametre analizi. Fotoğrafınızın yeniden boyutlandırılmış versiyonu yalnızca analiz amacıyla geçici olarak iletilir.</li>
-      <li><strong>Google Play Billing:</strong> Uygulama içi satın alma ve abonelikler.</li>
-      <li><strong>Google Sign-In:</strong> İsteğe bağlı kimlik doğrulama yöntemi.</li>
-      <li><strong>RevenueCat (uygulanabilirse):</strong> Abonelik yönetimi ve satın alma doğrulaması.</li>
+      <li>Satın almalar Google Play (Android) veya Apple App Store (iOS) tarafından işlenir.</li>
+      <li>Abonelik yönetimi RevenueCat tarafından gerçekleştirilir.</li>
+      <li>Ödeme kartı bilgilerinizi saklamıyoruz. Tüm ödemeler Google veya Apple tarafından işlenir.</li>
+      <li>Satın alınan krediler devredilemez ve nakde çevrilemez.</li>
     </ul>
 
-    <h2>6. Veri Saklama Süresi</h2>
+    <h2>8. Üçüncü Taraf Hizmetleri</h2>
+    <ul>
+      <li><strong>Firebase (Google):</strong> Kimlik doğrulama, veritabanı, cloud functions, analitik ve çökme raporlama.</li>
+      <li><strong>Google Gemini API:</strong> Yapay zeka fotoğraf parametre analizi.</li>
+      <li><strong>Google AdMob:</strong> Ödüllü reklamcılık.</li>
+      <li><strong>Google Play Billing / Apple App Store:</strong> Uygulama içi satın alma ve abonelikler.</li>
+      <li><strong>Google Sign-In / Apple Sign-In:</strong> İsteğe bağlı kimlik doğrulama yöntemleri.</li>
+      <li><strong>RevenueCat:</strong> Abonelik yönetimi ve satın alma doğrulaması.</li>
+    </ul>
+
+    <h2>9. Kişisel Verilerin Yurt Dışına Aktarılması</h2>
+    <p>Firebase, Google, RevenueCat, Apple ve benzeri hizmet sağlayıcılar kişisel verileri Türkiye dışında, Amerika Birleşik Devletleri veya diğer ülkelerde bulunan sunucularda işleyebilir. Yurt dışı aktarımlar, geçerli mevzuatın gerektirdiği sözleşmesel, teknik ve hukuki güvenceler çerçevesinde gerçekleştirilir.</p>
+
+    <h2>10. Veri Saklama Süresi</h2>
     <ul>
       <li><strong>Hesap verileri:</strong> Hesabınız aktif olduğu sürece saklanır.</li>
-      <li><strong>Fotoğraflar:</strong> İşlem sonrası saklanmaz, analiz sonrasında hemen silinir.</li>
+      <li><strong>Fotoğraflar:</strong> Kendi sistemlerimizde işlem sonrasında saklanmaz.</li>
       <li><strong>Kullanım istatistikleri:</strong> En fazla 12 ay saklanır.</li>
       <li><strong>Cihaz kimliği:</strong> Hesap silinene kadar saklanır.</li>
-      <li><strong>Hesap silinmesi durumunda:</strong> Tüm kişisel veriler 30 gün içinde kaldırılır.</li>
+      <li><strong>Hesap silinmesi:</strong> Kontrolümüzdeki hesap verileri, silme isteği işlendiğinde genel olarak silinir. Güvenlik, sahtekarlık önleme, anlaşmazlık çözümü, vergi, muhasebe veya yasal uyumluluk gerektirdiği durumlarda sınırlı kayıtlar tutulabilir.</li>
+      <li><strong>Satın alma ve yasal kayıtlar:</strong> Belirli kayıtlar, geçerli vergi, muhasebe, sahtekarlık önleme, anlaşmazlık çözümü veya diğer yasal yükümlülüklerin gerektirdiği süre boyunca saklanabilir.</li>
     </ul>
 
-    <h2>7. Haklarınız (KVKK / GDPR)</h2>
-    <p>Aşağıdaki haklara sahipsiniz:</p>
-    <ul>
-      <li>Hakkınızdaki kişisel verilere erişim hakkı.</li>
-      <li>Hatalı verilerin düzeltilmesini talep etme hakkı.</li>
-      <li>Hesabınızın ve ilgili tüm verilerin silinmesini talep etme hakkı.</li>
-      <li>Veri taşınabilirliği hakkı.</li>
-      <li>Kişisel verilerinizin işlenmesine itiraz etme hakkı.</li>
-      <li>Uygulanabilir durumlarda veri işleme rızanızı geri çekme hakkı.</li>
-    </ul>
-    <p>Bu hakları kullanmak için uygulamadaki hesap silme özelliğini kullanabilir veya <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
+    <h2>11. Haklarınız (KVKK / GDPR)</h2>
+    <p>Kişisel verilerinize erişim, düzeltme, silme ve taşıma haklarına sahipsiniz. Ayrıca uygulanabilir durumlarda veri işlemeye itiraz etme ve rızanızı geri çekme haklarınız bulunur.</p>
+    <p>Bu hakları kullanmak için uygulamadaki hesap silme özelliğini kullanın veya <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a> adresinden bizimle iletişime geçin.</p>
 
-    <h2>8. Çocukların Gizliliği</h2>
-    <p>ProLens AI, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamaz. 13 yaşın altında bir çocuğun kişisel bilgi sağladığını tespit edersek, bu bilgileri derhal sileriz.</p>
+    <h2>12. Çocukların Gizliliği</h2>
+    <p>Kullanıcıların en az 13 yaşında veya bulundukları ülkede geçerli olan daha yüksek minimum yaşta olmaları gerekmektedir. ProLens AI çocuklara yönelik tasarlanmamıştır ve geçerli minimum yaşın altındaki çocuklardan bilerek kişisel veri toplamaz.</p>
 
-    <h2>9. Veri Güvenliği</h2>
-    <p>Firebase App Check (Play Integrity API), şifreli veri iletimi (HTTPS/TLS) ve kullanıcıların yalnızca kendi verilerine erişebildiğini sağlayan Firestore güvenlik kuralları dahil endüstri standardı güvenlik önlemleri uyguluyoruz.</p>
-    <p>Bu endüstri standardı güvenlik önlemlerini uygulamamıza karşın, hiçbir elektronik iletim veya depolama yöntemi %100 güvenli değildir ve mutlak güvenliği garanti edemeyiz.</p>
+    <h2>13. Veri Güvenliği</h2>
+    <p>Firebase App Check (Play Integrity API), şifreli veri iletimi (HTTPS/TLS) ve kullanıcıların yalnızca kendi verilerine erişebildiğini sağlayan Firestore güvenlik kuralları dahil endüstri standardı güvenlik önlemleri uyguluyoruz. Hiçbir elektronik iletim yöntemi %100 güvenli değildir.</p>
 
-    <h2>10. Politika Değişiklikleri</h2>
-    <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler için uygulama veya e-posta yoluyla bildirim yapacağız. Değişikliklerden sonra ProLens AI'ı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+    <h2>14. Politika Değişiklikleri</h2>
+    <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikler için uygulama üzerinden bildirim yapacağız. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
 
     <hr class="divider">
     <div class="contact-box">
-      <h3>📬 İletişim</h3>
-      <p>Geliştirici: <strong>Ahmet İnce</strong></p>
+      <h3>İletişim</h3>
+      <p>Veri Sorumlusu / Geliştirici: <strong>Ahmet İnce – ProLens AI</strong></p>
+      <p>Ülke: Türkiye</p>
       <p>E-posta: <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a></p>
       <div class="footer-links">
-        <a href="privacy-policy.html">Gizlilik Politikası</a>
-        <a href="terms-of-service.html">Kullanım Şartları</a>
-        <a href="delete-account.html">Hesabı Sil</a>
+        <a href="https://ince34.github.io/prolens-privacy/privacy-policy.html">Gizlilik Politikası</a>
+        <a href="https://ince34.github.io/prolens-privacy/terms-of-service.html">Kullanım Şartları</a>
+        <a href="https://ince34.github.io/prolens-privacy/delete-account.html">Hesabı Sil</a>
       </div>
     </div>
   </div>
