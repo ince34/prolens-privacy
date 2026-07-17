@@ -24,7 +24,8 @@
     li { color: #94a3b8; font-size: 14px; margin-bottom: 6px; }
     strong { color: #e2e8f0; }
     .highlight { background: #0c111d; border-left: 3px solid #10b981; padding: 16px 20px; border-radius: 4px; margin: 16px 0; }
-    .highlight p { color: #d1fae5; margin: 0; }
+    .highlight p { color: #d1fae5; margin: 0; margin-bottom: 8px; }
+    .highlight p:last-child { margin-bottom: 0; }
     .warning { background: #0c111d; border-left: 3px solid #f59e0b; padding: 16px 20px; border-radius: 4px; margin: 16px 0; }
     .warning p { color: #fde68a; margin: 0; }
     a { color: #38bdf8; text-decoration: none; }
@@ -34,16 +35,12 @@
     .contact-box h3 { color: #ffffff; font-size: 14px; font-weight: 800; margin-bottom: 12px; }
     .footer-links { margin-top: 16px; font-size: 12px; }
     .footer-links a { color: #4b5563; margin-right: 16px; }
-    table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; }
-    th { text-align: left; font-size: 12px; color: #4b5563; font-weight: 700; padding: 8px 12px; border-bottom: 1px solid #1f2937; }
-    td { font-size: 13px; color: #94a3b8; padding: 8px 12px; border-bottom: 1px solid #0c111d; }
-    td strong { color: #e2e8f0; }
   </style>
 </head>
 <body>
 <div class="container">
-  <div class="logo">PROLENS<span>AI</span></div>
-  <div class="subtitle">Architectural Photo Neural Processor</div>
+  <div class="logo">PROLENS <span>AI</span></div>
+  <div class="subtitle">AI Photo Enhancement</div>
   <div class="lang-tabs">
     <button class="lang-tab active" onclick="showLang('en', this)">English</button>
     <button class="lang-tab" onclick="showLang('tr', this)">Türkçe</button>
@@ -52,93 +49,103 @@
   <!-- ===== ENGLISH ===== -->
   <div class="section active" id="en">
     <h1>Terms of Service</h1>
-    <div class="updated">Last updated: June 11, 2026 &nbsp;·&nbsp; Effective: June 11, 2026</div>
+    <div class="updated">Last updated: July 16, 2026 &nbsp;·&nbsp; Effective: July 16, 2026</div>
     <div class="highlight">
       <p>Please read these Terms carefully before using ProLens AI. By downloading or using the app, you agree to be bound by these Terms.</p>
     </div>
 
     <h2>1. Acceptance of Terms</h2>
-    <p>By accessing or using ProLens AI, you confirm that you are at least 13 years of age, have read and understood these Terms, and agree to be bound by them. If you do not agree, please do not use the Service.</p>
+    <p>By accessing or using ProLens AI, you confirm that you are at least 13 years of age (or the higher minimum age required in your country), have read and understood these Terms, and agree to be bound by them. If you do not agree, please do not use the Service.</p>
 
     <h2>2. Description of Service</h2>
-    <p>ProLens AI is a mobile application that provides AI-powered photo enhancement services for real estate and property photography. The Service uses artificial intelligence to analyze and enhance photographs uploaded by users.</p>
+    <p>ProLens AI is a mobile application that provides AI-powered photo enhancement services. The Service uses artificial intelligence to analyze and enhance photographs uploaded by users.</p>
 
-    <h2>3. User Content</h2>
+    <h2>3. User Content & Copyright</h2>
     <p>You retain full ownership of all photographs and content you upload to ProLens AI. By using the Service, you grant ProLens AI a limited, temporary, and non-exclusive license to process your content solely for the purpose of providing photo enhancement services. We do not claim ownership of your content.</p>
-    <p>You are solely responsible for ensuring you have the rights to upload and process the photographs you submit to the Service.</p>
+    <p>You are solely responsible for ensuring you have the rights to upload and process the photographs you submit. You must not upload or process content that infringes the intellectual property rights of any third party.</p>
+    <p>You must not use the Service to create misleading, deceptive, or manipulated images (such as deepfakes) intended to deceive others or violate applicable laws.</p>
 
     <h2>4. Privacy and Data Processing</h2>
-    <p>A resized version of your image may be temporarily transmitted to third-party AI services (including Google Gemini) solely for analysis purposes. Images are not permanently stored on our servers. Brand profile information such as company name, phone number, and logo is stored locally on your device and is not transmitted to our servers.</p>
+    <p>A resized version of your image may be temporarily transmitted to third-party AI services (including Google Gemini) solely for analysis purposes. Images are not permanently stored on our servers. Brand profile information is stored locally on your device.</p>
     <p>For full details, please review our <a href="https://ince34.github.io/prolens-privacy/privacy-policy.html">Privacy Policy</a>.</p>
 
     <h2>5. AI Disclaimer</h2>
     <div class="warning">
-      <p>AI-generated enhancements are provided on an "as available" basis. While we strive to provide high-quality results, ProLens AI does not guarantee that AI-generated outputs will be accurate, error-free, suitable for any specific purpose, or meet user expectations. Results may vary depending on image quality, lighting conditions, and other factors beyond our control.</p>
+      <p>AI-generated enhancements are provided on an "as available" basis. ProLens AI does not guarantee that AI-generated outputs will be accurate, error-free, suitable for any specific purpose, or meet user expectations. Results may vary depending on image quality, lighting conditions, and other factors beyond our control. Users are responsible for reviewing processed images before commercial or professional use.</p>
     </div>
 
     <h2>6. Credits and Purchases</h2>
-    <p>ProLens AI operates on a credit-based system. Credits are consumed when photos are processed. Multiple plans are available including free and paid tiers with varying credit amounts and export resolutions.</p>
-    <p>Prices shown in the application may change from time to time. Current pricing is displayed within the app and on the relevant app store listing.</p>
-    <p>One-time credit purchases do not expire. Premium subscription credits renew monthly and unused credits do not roll over — they expire at the end of each subscription cycle.</p>
-    <p>The first purchase of any paid plan activates your brand profile, which remains accessible even if credits run out.</p>
+    <p>ProLens AI operates on a credit-based system. Credits are consumed when photos are processed.</p>
+    <ul>
+      <li><strong>Free plan:</strong> 20 credits upon registration. Limited export resolution and ProLens AI watermark.</li>
+      <li><strong>Starter pack:</strong> One-time purchase of 100 credits. Credits do not expire.</li>
+      <li><strong>Pro pack:</strong> One-time purchase of 300 credits. Credits do not expire.</li>
+      <li><strong>Premium subscription:</strong> 750 credits per billing period. Unused subscription credits expire at the end of each billing period and do not roll over.</li>
+    </ul>
+    <p>One-time credit purchases accumulate and do not expire. Subscription credits refresh each billing period and unused amounts are not carried forward.</p>
+    <p>Purchased credits are non-transferable and cannot be exchanged for cash.</p>
 
-    <h2>7. Subscriptions</h2>
-    <p>Subscriptions automatically renew unless cancelled before the renewal date. Users may manage or cancel subscriptions at any time through their app store account settings (Google Play or Apple App Store).</p>
+    <h2>7. Subscriptions and Auto-Renewal</h2>
+    <div class="highlight">
+      <p><strong>Auto-Renewal:</strong> ProLens AI Premium is an auto-renewing subscription. Your subscription will automatically renew at the end of each billing period unless you cancel at least 24 hours before the renewal date.</p>
+      <p><strong>Billing:</strong> Payment is charged to your Google Play or Apple App Store account at confirmation of purchase and at the start of each renewal period.</p>
+      <p><strong>Cancellation:</strong> You may cancel at any time through your app store account. Cancellation takes effect at the end of the current billing period; you will retain access to Premium features until then.</p>
+      <p><strong>Price changes:</strong> We may change subscription prices. You will be notified in advance of any price changes.</p>
+    </div>
     <p>To cancel on Google Play: Google Play Store → Account → Subscriptions → ProLens AI → Cancel.</p>
     <p>To cancel on Apple App Store: Settings → Apple ID → Subscriptions → ProLens AI → Cancel.</p>
 
     <h2>8. Payments and Refunds</h2>
-    <p>Purchases, subscriptions, and credit packages are processed through the respective app store platform (Google Play Store or Apple App Store). Refund requests are subject to the refund policies of the platform through which the purchase was made. ProLens AI does not directly process payments and cannot independently issue refunds outside the policies provided by the applicable app store.</p>
-    <p>Users should consult the relevant app store's refund policy for additional information regarding eligibility and procedures.</p>
-    <p>Unused credits, subscription benefits, and purchased credit packages are non-transferable and non-refundable except where required by applicable law or the policies of the relevant app store platform.</p>
+    <p>Purchases are processed through Google Play Store or Apple App Store. Refund requests are subject to the refund policies of the platform through which the purchase was made. ProLens AI does not directly process payments and cannot independently issue refunds outside app store policies.</p>
+    <p>Unused credits, subscription benefits, and purchased credit packages are non-transferable and non-refundable except where required by applicable law or app store policies.</p>
 
-    <h2>9. DMCA & Intellectual Property Complaints</h2>
-    <p>We respect intellectual property rights. If you believe that content available through our Service infringes your rights, please contact us at <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a> with:</p>
-    <ul>
-      <li>A description of the intellectual property you claim has been infringed</li>
-      <li>Where the allegedly infringing material is located</li>
-      <li>Your contact information</li>
-      <li>A statement of good faith belief that the use is not authorized</li>
-    </ul>
+    <h2>9. Watermark and Export</h2>
+    <p>Free and guest users: exported photos include a ProLens AI watermark.</p>
+    <p>Paid users (Starter, Pro, Premium): may add a custom brand watermark (company name, phone, logo) to exported photos.</p>
+    <p>You are responsible for ensuring that watermark content you add (including logos and text) does not infringe third-party rights.</p>
 
     <h2>10. Prohibited Uses</h2>
     <p>You agree not to use the Service to:</p>
     <ul>
-      <li>Process photographs you do not own or have permission to use</li>
-      <li>Attempt to reverse-engineer or extract AI models from the Service</li>
-      <li>Use automated tools to create multiple accounts or abuse the credit system</li>
-      <li>Upload illegal, harmful, or offensive content</li>
-      <li>Violate any applicable local, national, or international laws</li>
+      <li>Process photographs you do not own or have permission to use.</li>
+      <li>Create deepfakes, misleading, or deceptive content.</li>
+      <li>Attempt to reverse-engineer or extract AI models from the Service.</li>
+      <li>Use automated tools to create multiple accounts or abuse the credit system.</li>
+      <li>Upload illegal, harmful, obscene, or offensive content.</li>
+      <li>Violate any applicable local, national, or international laws.</li>
     </ul>
+    <p>We reserve the right to suspend or terminate accounts engaged in prohibited uses without prior notice.</p>
 
-    <h2>11. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by applicable law, ProLens AI shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the Service.</p>
-    <p>ProLens AI's total liability shall not exceed the total amount paid by the user during the twelve (12) months preceding the event giving rise to the claim.</p>
+    <h2>11. DMCA & Intellectual Property Complaints</h2>
+    <p>We respect intellectual property rights. If you believe content available through our Service infringes your rights, please contact us at <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a> with a description of the infringement, the location of the content, your contact information, and a statement of good faith belief that the use is not authorized.</p>
 
-    <h2>12. Force Majeure</h2>
-    <p>We shall not be liable for any failure or delay in performance resulting from causes beyond our reasonable control, including but not limited to internet outages, cloud service disruptions, third-party service failures (including Firebase, Google Cloud, or Google Gemini), natural disasters, governmental actions, or other force majeure events.</p>
+    <h2>12. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, ProLens AI shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the Service. ProLens AI's total liability shall not exceed the total amount paid by the user during the twelve (12) months preceding the event giving rise to the claim.</p>
 
-    <h2>13. Disclaimer of Warranties</h2>
+    <h2>13. Force Majeure</h2>
+    <p>We shall not be liable for any failure or delay in performance resulting from causes beyond our reasonable control, including internet outages, cloud service disruptions, third-party service failures (including Firebase, Google Cloud, or Google Gemini), natural disasters, or governmental actions.</p>
+
+    <h2>14. Disclaimer of Warranties</h2>
     <p>The Service is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
 
-    <h2>14. Termination</h2>
+    <h2>15. Termination</h2>
     <p>We reserve the right to suspend or terminate your access at any time for conduct that violates these Terms. You may delete your account at any time through the app or our <a href="https://ince34.github.io/prolens-privacy/delete-account.html">account deletion page</a>.</p>
 
-    <h2>15. Changes to Terms</h2>
-    <p>We may update these Terms from time to time. We will notify users of material changes by updating the "Last updated" date. Continued use of the Service after changes constitutes acceptance of the new Terms.</p>
+    <h2>16. Changes to Terms</h2>
+    <p>We may update these Terms from time to time. We will notify users of material changes through the app. Continued use after changes constitutes acceptance of the new Terms.</p>
 
-    <h2>16. Governing Law</h2>
-    <p>These Terms shall be governed by the laws of the Republic of Türkiye. Any disputes arising from these Terms shall first be attempted to be resolved through good-faith negotiation. If such resolution cannot be reached, the courts of Muğla, Türkiye shall have exclusive jurisdiction.</p>
+    <h2>17. Governing Law</h2>
+    <p>These Terms shall be governed by the laws of the Republic of Türkiye. Any disputes shall first be attempted to be resolved through good-faith negotiation. If not resolved, the courts of Muğla, Türkiye shall have exclusive jurisdiction.</p>
 
     <hr class="divider">
     <div class="contact-box">
-      <h3>📬 Contact Us</h3>
-      <p>Developer: <strong>Ahmet İnce</strong></p>
+      <h3>Contact Us</h3>
+      <p>Developer: <strong>Ahmet İnce – ProLens AI</strong></p>
       <p>Email: <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a></p>
       <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-of-service.html">Terms of Service</a>
-        <a href="delete-account.html">Delete Account</a>
+        <a href="https://ince34.github.io/prolens-privacy/privacy-policy.html">Privacy Policy</a>
+        <a href="https://ince34.github.io/prolens-privacy/terms-of-service.html">Terms of Service</a>
+        <a href="https://ince34.github.io/prolens-privacy/delete-account.html">Delete Account</a>
       </div>
     </div>
   </div>
@@ -146,93 +153,101 @@
   <!-- ===== TÜRKÇE ===== -->
   <div class="section" id="tr">
     <h1>Kullanım Şartları</h1>
-    <div class="updated">Son güncelleme: 11 Haziran 2026 &nbsp;·&nbsp; Yürürlük: 11 Haziran 2026</div>
+    <div class="updated">Son güncelleme: 16 Temmuz 2026 &nbsp;·&nbsp; Yürürlük: 16 Temmuz 2026</div>
     <div class="highlight">
       <p>ProLens AI'ı kullanmadan önce lütfen bu Şartları dikkatlice okuyun. Uygulamayı indirerek veya kullanarak bu Şartlara bağlı olmayı kabul etmiş sayılırsınız.</p>
     </div>
 
     <h2>1. Şartların Kabulü</h2>
-    <p>ProLens AI'a erişerek veya kullanarak, en az 13 yaşında olduğunuzu, bu Şartları okuduğunuzu ve anladığınızı ve bunlara bağlı olmayı kabul ettiğinizi onaylarsınız. Kabul etmiyorsanız lütfen Hizmeti kullanmayın.</p>
+    <p>ProLens AI'a erişerek veya kullanarak, en az 13 yaşında olduğunuzu (veya bulunduğunuz ülkede geçerli olan daha yüksek minimum yaşta), bu Şartları okuduğunuzu ve kabul ettiğinizi onaylarsınız. Kabul etmiyorsanız lütfen Hizmeti kullanmayın.</p>
 
     <h2>2. Hizmetin Tanımı</h2>
-    <p>ProLens AI, emlak ve mülk fotoğrafçılığı için yapay zeka destekli fotoğraf iyileştirme hizmetleri sunan bir mobil uygulamadır. Hizmet, kullanıcılar tarafından yüklenen fotoğrafları analiz etmek ve iyileştirmek için yapay zeka kullanır.</p>
+    <p>ProLens AI, yapay zeka destekli fotoğraf iyileştirme hizmetleri sunan bir mobil uygulamadır. Hizmet, kullanıcılar tarafından yüklenen fotoğrafları analiz etmek ve iyileştirmek için yapay zeka kullanır.</p>
 
-    <h2>3. Kullanıcı İçeriği</h2>
-    <p>ProLens AI'a yüklediğiniz tüm fotoğrafların ve içeriklerin tam sahipliği size aittir. Hizmeti kullanarak, içeriğinizi yalnızca fotoğraf iyileştirme hizmetleri sunmak amacıyla işlemesi için ProLens AI'a sınırlı, geçici ve münhasır olmayan bir lisans verirsiniz. İçeriğinizin sahipliğini talep etmiyoruz.</p>
-    <p>Hizmete gönderdiğiniz fotoğrafları yükleme ve işleme haklarına sahip olduğunuzdan emin olmak tamamen sizin sorumluluğunuzdur.</p>
+    <h2>3. Kullanıcı İçeriği ve Telif Hakkı</h2>
+    <p>ProLens AI'a yüklediğiniz tüm fotoğrafların tam sahipliği size aittir. Hizmeti kullanarak, içeriğinizi yalnızca fotoğraf iyileştirme hizmetleri sunmak amacıyla işlemesi için ProLens AI'a sınırlı, geçici ve münhasır olmayan bir lisans verirsiniz.</p>
+    <p>Hizmete gönderdiğiniz fotoğrafları yükleme ve işleme haklarına sahip olduğunuzdan emin olmak tamamen sizin sorumluluğunuzdadır. Üçüncü tarafların fikri mülkiyet haklarını ihlal eden içerik yükleyemezsiniz.</p>
+    <p>Başkalarını yanıltmak amacıyla deepfake veya yanıltıcı görüntüler oluşturmak için Hizmeti kullanamazsınız.</p>
 
     <h2>4. Gizlilik ve Veri İşleme</h2>
-    <p>Görüntünüzün yeniden boyutlandırılmış bir versiyonu, yalnızca analiz amacıyla geçici olarak üçüncü taraf AI servislerine (Google Gemini dahil) iletilebilir. Görüntüler sunucularımızda kalıcı olarak saklanmaz. Şirket adı, telefon numarası ve logo gibi marka profili bilgileri cihazınızda yerel olarak saklanır ve sunucularımıza iletilmez.</p>
+    <p>Görüntünüzün yeniden boyutlandırılmış versiyonu, yalnızca analiz amacıyla üçüncü taraf AI servislerine geçici olarak iletilebilir. Görüntüler sunucularımızda kalıcı olarak saklanmaz. Marka profili bilgileri cihazınızda yerel olarak saklanır.</p>
     <p>Ayrıntılar için <a href="https://ince34.github.io/prolens-privacy/privacy-policy.html">Gizlilik Politikamızı</a> incelemenizi öneririz.</p>
 
     <h2>5. Yapay Zeka Sorumluluk Reddi</h2>
     <div class="warning">
-      <p>Yapay zeka tarafından oluşturulan iyileştirmeler "mevcut olduğu şekliyle" sunulmaktadır. Yüksek kaliteli sonuçlar sunmaya çalışsak da ProLens AI, yapay zeka çıktılarının doğru, hatasız, belirli bir amaca uygun veya kullanıcı beklentilerini karşılayacağını garanti etmez. Sonuçlar görüntü kalitesine, ışık koşullarına ve kontrolümüz dışındaki diğer faktörlere bağlı olarak değişebilir.</p>
+      <p>Yapay zeka tarafından oluşturulan iyileştirmeler "mevcut olduğu şekliyle" sunulmaktadır. ProLens AI, çıktıların doğru, hatasız veya belirli bir amaca uygun olacağını garanti etmez. Kullanıcılar, işlenmiş görüntüleri ticari veya profesyonel amaçlarla kullanmadan önce incelemekten sorumludur.</p>
     </div>
 
     <h2>6. Krediler ve Satın Almalar</h2>
-    <p>ProLens AI, kredi tabanlı bir sistemle çalışır. Fotoğraflar işlendiğinde kredi tüketilir. Ücretsiz ve ücretli çeşitli planlar mevcuttur.</p>
-    <p>Uygulamada gösterilen fiyatlar zaman zaman değişebilir. Güncel fiyatlandırma uygulama içinde ve ilgili uygulama mağazası sayfasında görüntülenmektedir.</p>
-    <p>Tek seferlik kredi satın alımları sona ermez. Premium abonelik kredileri aylık olarak yenilenir ve kullanılmayan krediler bir sonraki döneme devretmez — her abonelik döneminin sonunda sona erer.</p>
-    <p>Ücretli herhangi bir planın ilk satın alımı, marka profilinizi etkinleştirir. Kredi bitse bile marka profilinize erişiminiz devam eder.</p>
+    <p>ProLens AI, kredi tabanlı bir sistemle çalışır.</p>
+    <ul>
+      <li><strong>Ücretsiz plan:</strong> Kayıt sırasında 20 kredi. Sınırlı dışa aktarma çözünürlüğü ve ProLens AI filigranı.</li>
+      <li><strong>Starter paketi:</strong> 100 kredilik tek seferlik satın alma. Krediler sona ermez.</li>
+      <li><strong>Pro paketi:</strong> 300 kredilik tek seferlik satın alma. Krediler sona ermez.</li>
+      <li><strong>Premium abonelik:</strong> Her faturalama döneminde 750 kredi. Kullanılmayan abonelik kredileri dönem sonunda sona erer ve bir sonraki döneme devretmez.</li>
+    </ul>
+    <p>Satın alınan krediler devredilemez ve nakde çevrilemez.</p>
 
-    <h2>7. Abonelikler</h2>
-    <p>Abonelikler, yenileme tarihinden önce iptal edilmediği sürece otomatik olarak yenilenir. Kullanıcılar, uygulama mağazası hesap ayarları (Google Play veya Apple App Store) üzerinden istedikleri zaman aboneliklerini yönetebilir veya iptal edebilir.</p>
+    <h2>7. Abonelikler ve Otomatik Yenileme</h2>
+    <div class="highlight">
+      <p><strong>Otomatik Yenileme:</strong> ProLens AI Premium, otomatik yenilenen bir aboneliktir. Yenileme tarihinden en az 24 saat önce iptal edilmediği sürece aboneliğiniz otomatik olarak yenilenir.</p>
+      <p><strong>Ödeme:</strong> Satın alma onayında ve her yenileme döneminin başında Google Play veya Apple App Store hesabınızdan ücret tahsil edilir.</p>
+      <p><strong>İptal:</strong> Aboneliğinizi istediğiniz zaman uygulama mağazanız üzerinden iptal edebilirsiniz. İptal, mevcut faturalama döneminin sonunda geçerli olur.</p>
+      <p><strong>Fiyat değişiklikleri:</strong> Abonelik fiyatlarını değiştirebiliriz. Herhangi bir fiyat değişikliği öncesinde bilgilendirileceksiniz.</p>
+    </div>
     <p>Google Play'de iptal: Google Play Store → Hesap → Abonelikler → ProLens AI → İptal Et.</p>
     <p>Apple App Store'da iptal: Ayarlar → Apple ID → Abonelikler → ProLens AI → İptal Et.</p>
 
     <h2>8. Ödemeler ve İadeler</h2>
-    <p>Satın almalar, abonelikler ve kredi paketleri ilgili uygulama mağazası platformu (Google Play Store veya Apple App Store) üzerinden işlenir. İade talepleri, satın almanın yapıldığı platforma ait iade politikalarına tabidir. ProLens AI ödemeleri doğrudan işlemez ve ilgili uygulama mağazasının politikaları dışında bağımsız olarak iade yapamaz.</p>
-    <p>Uygunluk ve prosedürler hakkında ek bilgi için ilgili uygulama mağazasının iade politikasına başvurmanız önerilir.</p>
-    <p>Kullanılmayan krediler, abonelik hakları ve satın alınan kredi paketleri, yürürlükteki mevzuat veya ilgili uygulama mağazası platformunun politikaları gerektirmedikçe devredilemez ve iade edilemez.</p>
+    <p>Satın almalar Google Play Store veya Apple App Store üzerinden işlenir. İade talepleri ilgili platformun iade politikalarına tabidir. Kullanılmayan krediler ve abonelik hakları, yürürlükteki mevzuat veya uygulama mağazası politikaları gerektirmedikçe iade edilemez.</p>
 
-    <h2>9. DMCA & Fikri Mülkiyet Şikayetleri</h2>
-    <p>Fikri mülkiyet haklarına saygı duyuyoruz. Hizmetimiz aracılığıyla sunulan içeriğin haklarınızı ihlal ettiğine inanıyorsanız, lütfen aşağıdaki bilgilerle <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a> adresinden bizimle iletişime geçin:</p>
-    <ul>
-      <li>İhlal edildiğini iddia ettiğiniz fikri mülkiyetin açıklaması</li>
-      <li>İhlal ettiği iddia edilen materyalin nerede bulunduğu</li>
-      <li>İletişim bilgileriniz</li>
-      <li>Kullanımın yetkili olmadığına dair iyi niyetli bir beyan</li>
-    </ul>
+    <h2>9. Filigran ve Dışa Aktarma</h2>
+    <p>Ücretsiz ve misafir kullanıcılar: dışa aktarılan fotoğraflara ProLens AI filigranı eklenir.</p>
+    <p>Ücretli kullanıcılar (Starter, Pro, Premium): özel marka filigranı (şirket adı, telefon, logo) ekleyebilir.</p>
+    <p>Eklediğiniz filigran içeriğinin (logo ve metin dahil) üçüncü taraf haklarını ihlal etmediğinden emin olmaktan siz sorumlusunuz.</p>
 
     <h2>10. Yasaklı Kullanımlar</h2>
     <p>Hizmeti aşağıdaki amaçlarla kullanmamayı kabul edersiniz:</p>
     <ul>
-      <li>Sahip olmadığınız veya kullanma izniniz olmayan fotoğrafları işlemek</li>
-      <li>Hizmetin AI modellerini tersine mühendislik yapmaya çalışmak</li>
-      <li>Birden fazla hesap oluşturmak veya kredi sistemini kötüye kullanmak için otomatik araçlar kullanmak</li>
-      <li>Yasadışı, zararlı veya rahatsız edici içerik yüklemek</li>
-      <li>Geçerli yerel, ulusal veya uluslararası yasaları ihlal etmek</li>
+      <li>Sahip olmadığınız veya kullanma izniniz olmayan fotoğrafları işlemek.</li>
+      <li>Deepfake veya yanıltıcı içerik oluşturmak.</li>
+      <li>Hizmetin AI modellerini tersine mühendislik yapmaya çalışmak.</li>
+      <li>Birden fazla hesap oluşturmak veya kredi sistemini kötüye kullanmak için otomatik araçlar kullanmak.</li>
+      <li>Yasadışı, zararlı veya rahatsız edici içerik yüklemek.</li>
+      <li>Geçerli yerel, ulusal veya uluslararası yasaları ihlal etmek.</li>
     </ul>
+    <p>Yasaklı kullanımlarda bulunan hesapları önceden bildirim yapmaksızın askıya alma veya sonlandırma hakkımızı saklı tutuyoruz.</p>
 
-    <h2>11. Sorumluluk Sınırlaması</h2>
-    <p>Yürürlükteki yasaların izin verdiği azami ölçüde, ProLens AI, Hizmetin kullanımından kaynaklanan dolaylı, arızi, özel, sonuçsal veya cezai zararlardan sorumlu tutulamaz.</p>
-    <p>ProLens AI'ın toplam sorumluluğu, talebin doğmasından önceki on iki (12) ay içinde kullanıcı tarafından ödenen toplam tutarı aşmayacaktır.</p>
+    <h2>11. DMCA ve Fikri Mülkiyet Şikayetleri</h2>
+    <p>Fikri mülkiyet haklarına saygı duyuyoruz. Hizmetimiz aracılığıyla sunulan içeriğin haklarınızı ihlal ettiğine inanıyorsanız <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a> adresinden bizimle iletişime geçin.</p>
 
-    <h2>12. Mücbir Sebepler</h2>
-    <p>İnternet kesintileri, bulut hizmeti aksaklıkları, üçüncü taraf hizmet arızaları (Firebase, Google Cloud veya Google Gemini dahil), doğal afetler, hükümet eylemleri veya diğer mücbir sebep olayları dahil olmak üzere makul kontrolümüz dışındaki nedenlerden kaynaklanan performans gecikmelerinden veya başarısızlıklardan sorumlu tutulamayız.</p>
+    <h2>12. Sorumluluk Sınırlaması</h2>
+    <p>Yürürlükteki yasaların izin verdiği azami ölçüde, ProLens AI dolaylı, arızi veya sonuçsal zararlardan sorumlu tutulamaz. Toplam sorumluluğumuz, talebin doğmasından önceki 12 ay içinde ödenen toplam tutarı aşmaz.</p>
 
-    <h2>13. Garanti Reddi</h2>
-    <p>Hizmet, zımni ticari elverişlilik, belirli bir amaca uygunluk ve ihlal etmeme garantileri dahil olmak üzere herhangi bir türde açık veya zımni garanti olmaksızın "olduğu gibi" ve "mevcut olduğu şekliyle" sunulmaktadır.</p>
+    <h2>13. Mücbir Sebepler</h2>
+    <p>Makul kontrolümüz dışındaki nedenlerden (internet kesintileri, üçüncü taraf hizmet arızaları dahil) kaynaklanan performans gecikmelerinden veya başarısızlıklardan sorumlu tutulamayız.</p>
 
-    <h2>14. Fesih</h2>
-    <p>Bu Şartları ihlal eden davranışlar için erişiminizi istediğimiz zaman askıya alma veya sonlandırma hakkımızı saklı tutuyoruz. Hesabınızı istediğiniz zaman uygulama üzerinden veya <a href="https://ince34.github.io/prolens-privacy/delete-account.html">hesap silme sayfamız</a> aracılığıyla silebilirsiniz.</p>
+    <h2>14. Garanti Reddi</h2>
+    <p>Hizmet, herhangi bir garanti olmaksızın "olduğu gibi" ve "mevcut olduğu şekliyle" sunulmaktadır.</p>
 
-    <h2>15. Şartlardaki Değişiklikler</h2>
-    <p>Bu Şartları zaman zaman güncelleyebiliriz. Önemli değişiklikleri "Son güncelleme" tarihini güncelleyerek kullanıcılara bildireceğiz. Değişikliklerden sonra Hizmeti kullanmaya devam etmeniz, yeni Şartları kabul ettiğiniz anlamına gelir.</p>
+    <h2>15. Fesih</h2>
+    <p>Bu Şartları ihlal eden davranışlar için erişiminizi askıya alma veya sonlandırma hakkımızı saklı tutuyoruz. Hesabınızı istediğiniz zaman uygulama üzerinden veya <a href="https://ince34.github.io/prolens-privacy/delete-account.html">hesap silme sayfamız</a> aracılığıyla silebilirsiniz.</p>
 
-    <h2>16. Uygulanacak Hukuk</h2>
-    <p>Bu Şartlar, Türkiye Cumhuriyeti yasalarına göre yorumlanacaktır. Bu Şartlardan doğan anlaşmazlıklar önce iyi niyetli müzakere yoluyla çözülmeye çalışılacaktır. Çözüme ulaşılamaması durumunda, Muğla Türkiye mahkemeleri münhasır yargı yetkisine sahip olacaktır.</p>
+    <h2>16. Şartlardaki Değişiklikler</h2>
+    <p>Bu Şartları zaman zaman güncelleyebiliriz. Önemli değişiklikler için uygulama üzerinden bildirim yapacağız.</p>
+
+    <h2>17. Uygulanacak Hukuk</h2>
+    <p>Bu Şartlar Türkiye Cumhuriyeti yasalarına göre yorumlanacaktır. Anlaşmazlıklar önce iyi niyetli müzakere ile çözülmeye çalışılacak; çözüme ulaşılamaması halinde Muğla Türkiye mahkemeleri yetkili olacaktır.</p>
 
     <hr class="divider">
     <div class="contact-box">
-      <h3>📬 İletişim</h3>
-      <p>Geliştirici: <strong>Ahmet İnce</strong></p>
+      <h3>İletişim</h3>
+      <p>Geliştirici: <strong>Ahmet İnce – ProLens AI</strong></p>
       <p>E-posta: <a href="mailto:a.ince.mugla@gmail.com">a.ince.mugla@gmail.com</a></p>
       <div class="footer-links">
-        <a href="privacy-policy.html">Gizlilik Politikası</a>
-        <a href="terms-of-service.html">Kullanım Şartları</a>
-        <a href="delete-account.html">Hesabı Sil</a>
+        <a href="https://ince34.github.io/prolens-privacy/privacy-policy.html">Gizlilik Politikası</a>
+        <a href="https://ince34.github.io/prolens-privacy/terms-of-service.html">Kullanım Şartları</a>
+        <a href="https://ince34.github.io/prolens-privacy/delete-account.html">Hesabı Sil</a>
       </div>
     </div>
   </div>
